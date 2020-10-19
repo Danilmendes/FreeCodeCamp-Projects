@@ -1,0 +1,135 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    color: 	rgb(41, 41, 41);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:840px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+a{
+    text-decoration: none;
+} 
+#navbar{
+    background-color:rgb(32, 98, 176);
+    width:15%;
+    flex-wrap: wrap;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:840px){
+    #navbar{
+     width: 100%;
+     text-align: center;
+    }
+}
+#navbar header{
+    font-size: 1.1em;
+    font-weight: bold; 
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    color: white;
+}
+@media(max-width:840px){
+    #navbar header{
+        position: relative;
+    }
+}
+#navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    position:sticky;
+    top:115px;
+}
+@media(max-width:840px){
+    #navbar ul{
+        height: 120px;
+        overflow-y: scroll;
+    }
+}
+#navbar ul li{
+    padding: 10px 10px 10px 20px;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
+#navbar a{
+    display: block;
+}
+#navbar a:visited, #navbar a:link{
+    color: white;
+}
+#navbar ul li:hover{
+    background-color:rgb(24, 72, 131);
+}    
+#main-doc{
+    width: 55%;
+    padding: 0px 40px 40px 40px;
+    text-align: justify;
+}
+@media(max-width:840px){
+    #main-doc{
+        width: 80%;
+        align-self: center;
+    }
+    #main-doc header{
+        text-align: center;
+    }
+    #More_about_CSS article{
+        text-align: center;
+    }
+}
+
+#main-doc header{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin:30px 0px ;
+    color: rgb(32, 98, 176);
+}
+#main-doc p{
+    padding-left: 10px;
+}
+#main-doc p code{
+    font-size: 1.1em;
+}
+li code{
+    font-size: 1.1em;
+}
+.box-text{
+    background-color: lightgray;
+    padding: 1px;
+}
+.code-box{
+    display: block;
+    width: 70%;
+    padding: 5px;
+    color:white;
+    box-shadow: 1px 1px 3px black;
+    background-color: rgb(32, 98, 176);
+    border: 1px solid rgb(32, 98, 176);
+    border-radius: 2px;
+} 
+@media(max-width:840px){
+    .code-box{
+        width: 100%;
+        text-align: center;
+    }
+}  
+span{
+    display: block;
+}
+p a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background: linear-gradient(rgb(60, 156, 216),rgb(32, 98, 176));
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

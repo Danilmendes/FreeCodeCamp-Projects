@@ -1,0 +1,108 @@
+/* Start container*/
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background: url(https:www.hypeness.com.br/1/2018/08/Leonardo-Da-Vinci-Caderno-H.jpg)
+    no-repeat center top fixed;
+  background-size: cover;
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+a {
+  text-decoration: none;
+}
+/*End container*/
+/*Start header*/
+header {
+  width: 100%;
+  text-align: center;
+  height: 380px;
+}
+#title {
+  margin-bottom: 10px;
+  font-family: "Parisienne", cursive;
+  font-size: 2.3em;
+}
+#image {
+  max-width: 225px;
+  width: 100%;
+  border-radius: 100%;
+  margin: 0px auto;
+  display: block;
+}
+
+#img-caption {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 10px auto;
+  width: 400px;
+  border-radius: 25px;
+  background-color: rgb(219, 196, 146);
+  padding:5px;
+}
+span{
+  display:inline-block;
+}
+/*End header*/
+/*Start timeline*/
+#tribute-info {
+  width: 60%;
+  margin-right: auto;
+  margin-top: 30px;
+  flex-shrink: 2;
+  padding-right: 10px;
+}
+#tribute-info h2 {
+  text-align: center;
+}
+#tribute-info li {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+#tribute-info a {
+  background-color: rgba(97, 84, 56, 0.712);
+  margin: 20px 30px;
+  padding: 5px;
+  color: white;
+  display: inline-block;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+}
+/*End Timeline*/
+/*Start Timeline*/
+#lateral-area {
+  width: 38%;
+  margin-top: 30px;
+  overflow-y: scroll;
+  min-height: 700px;
+  height: 70vw;
+  padding: 0px;
+  text-align: center;
+  flex-shrink: 1;
+}
+#lateral-area ul {
+  list-style: none;
+}
+#lateral-area p {
+  padding-bottom: 15px;
+  margin-top: 5px;
+  color: black;
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+@media (max-width: 1024px) {
+  #tribute-info {
+    width: 100%;
+  }
+  #lateral-area {
+    width: 100%;
+  }
+}

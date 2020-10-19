@@ -1,0 +1,352 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  /*Start Header*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(248, 90, 69);
+  }
+  header h1 {
+    position: fixed;
+    text-indent: -9999px;
+  }
+  #header-img {
+    max-width: 200px;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 2px;
+    width: 100%;
+  }
+  #nav-bar li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-right: 40px;
+  }
+  .nav-link {
+    font-weight: bold;
+    position: relative;
+    color: rgb(248, 90, 69);
+  }
+  .nav-link a:link,
+  .nav-link a:visited {
+    color: rgb(248, 90, 69);
+  }
+  
+  .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(248, 90, 69);
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+  }
+  .nav-link:hover::after {
+    left: 5%;
+    width: 90%;
+  }
+  /*End header*/
+  main {
+    padding: 50px auto;
+    border-top: 1px solid rgba(169, 169, 169, 0.3);
+  }
+  /*start video area*/
+  #example {
+    text-align: center;
+    background: linear-gradient(rgba(195, 227, 220, 0.5), rgb(195, 227, 220, 0.5)),
+      url(https://image.freepik.com/vetores-gratis/fundo-de-kawaii-de-bolo-de-aniversario_6997-1693.jpg)
+        center top;
+    padding: 50px;
+  }
+  #video {
+    width: 50%;
+    height: 316px;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  #example h2 {
+    font-family: "Lobster", cursive;
+    color: black;
+    text-shadow: 1px 1px 4px darkgray;
+    font-size: 2em;
+    font-weight: normal;
+  }
+  /*End video area*/
+  /*Start category*/
+  #category {
+    padding-top: 70px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  #category h2 {
+    font-family: "Lobster", cursive;
+    font-size: 3.5em;
+    font-weight: normal;
+    color: rgb(248, 90, 69);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  #birthday h3,
+  #wedding h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.9em;
+    font-family: "Lobster", cursive;
+    max-width: 300px;
+    margin: auto;
+  }
+  #birthday h3:hover {
+    background: url(https://i.pinimg.com/originals/34/65/ff/3465ff1e063270ad87658a38d61d0afe.png)
+      no-repeat;
+    background-position: 5% center;
+    background-size: contain;
+    transition: background 0.8s ease;
+    color: rgb(248, 90, 69);
+  }
+  #wedding h3:hover {
+    background: url(https://static.thenounproject.com/png/191343-200.png)
+      no-repeat;
+    background-position: 5% center;
+    background-size: contain;
+    transition: background 0.8s ease;
+    color: rgb(248, 90, 69);
+  }
+  .birthday-img {
+    width: 40%;
+    height: auto;
+    padding: 3px;
+    margin: 10px 10px 30px 10px;
+    border: 2px solid rgba(195, 227, 220, 0.7);
+    border-radius: 5px;
+  }
+  .wedding-img {
+    width: 35%;
+    height: auto;
+    padding: 3px;
+    margin: 10px;
+    border: 2px solid rgba(195, 227, 220, 0.7);
+    border-radius: 5px;
+  }
+  /*End category*/
+  /*Start steps*/
+  #how-it-works {
+    padding-top: 70px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  #how-it-works h2 {
+    font-family: "Lobster", cursive;
+    font-size: 3.5em;
+    font-weight: normal;
+    color: rgb(248, 90, 69);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  .side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .steps {
+    width: 30%;
+  }
+  
+  .steps img {
+    width: 80%;
+    height: auto;
+  }
+  .steps p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  /*End steps*/
+  /*Start reviews*/
+  #reviews {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #reviews h2 {
+    font-family: "Lobster", cursive;
+    font-size: 3.5em;
+    font-weight: normal;
+    color: rgb(248, 90, 69);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  .comment {
+    margin: 20px;
+    padding: 5px 10px;
+    width: 27%;
+    text-align: justify;
+    justify-content: row;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .comment img {
+    width: 80px;
+  }
+  .comment-author,
+  .date {
+    color: rgb(105, 105, 105);
+    font-size: 0.8em;
+  }
+  .date {
+    margin-left: 10px;
+  }
+  .comment p {
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  #reviews .side-by-side {
+    background: linear-gradient(rgba(179, 241, 79, 0.7), rgba(179, 241, 79, 0.7)),
+      url(https://previews.123rf.com/images/sunniwa/sunniwa1805/sunniwa180500112/102503748-set-of-sketches-baking-birthday-cakes-desserts-black-and-white-on-white-background-hand-drawing-styl.jpg);
+    background-size: contain;
+  }
+  /*End Reviews*/
+  /*Start Footer*/
+  footer {
+    background: rgb(33, 48, 74);
+    background-size: 150px;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: 1em;
+  }
+  footer a:visited,
+  footer a:link,
+  footer a:hover {
+    color: white;
+  }
+  label {
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    padding: 7px;
+    border-radius: 5px;
+  }
+  #email {
+    width: 300px;
+    background: white
+      url(https://www.iconfinder.com/data/icons/neon-line-social-circles-black/100/Neon_Line_Social_Circles_50Icon_10px_grid-51-512.png)
+      no-repeat 2px 0px;
+    background-size: 9%;
+    padding-left: 40px;
+    font-weight: bold;
+  }
+  #submit {
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(rgb(248, 90, 69), rgb(248, 51, 25));
+    box-shadow: 0 3px 0 rgb(156, 57, 44);
+    border: none;
+    cursor: pointer;
+  }
+  #submit:hover {
+    background: rgb(156, 57, 44);
+    box-shadow: 0 3px 0 rgb(121, 43, 33);
+    border: none;
+  }
+  #submit:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+    border: none;
+  }
+  #submit:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }
+  #form-wrapper p {
+    font-weight: bold;
+  }
+  #copyright {
+    margin-top: 50px;
+    font-size: 0.9em;
+  }
+  /*End Footer*/
+  /*Media Querry*/
+  @media (max-width: 650px) {
+    header {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 2px;
+      font-size: 0.9em;
+    }
+    #header-img {
+      align-self: center;
+      width: 100%;
+    }
+    ul {
+      align-self: center;
+    }
+    #nav-bar li {
+      display: block;
+      text-align: center;
+      padding: 5px;
+    }
+    .nav-link::after {
+      bottom: -25%;
+    }
+    #category {
+      padding-top: 140px;
+    }
+    #how-it-works h2 {
+      padding-top: 70px;
+    }
+    #how-it-works .side-by-side {
+      flex-direction: column;
+      align-items: center;
+    }
+    .steps {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    .steps img {
+      width: 100%;
+    }
+    #reviews {
+      padding-top: 140px;
+    }
+    .comment {
+      width: 40%;
+      margin: 10px;
+    }
+     #submit{
+      margin-top:10px;
+    } 
+  }
+  @media (min-width: 920px) {
+    #footer-wrapper {
+      width: 70%;
+      background: url(https://image.flaticon.com/icons/png/512/184/184374.png)
+        no-repeat center right;
+      background-size: contain;
+    }
+  }
+  /*End Media Querry */
+  

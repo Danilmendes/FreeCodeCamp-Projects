@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Technical Documentatio Page</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>
+               <h1>About CSS</h1> 
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+                <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+                <li><a class="nav-link" href="#CSS_Background">CSS Background</a></li>
+                <li><a class="nav-link" href="#CSS_Margins">CSS Margins</a></li>
+                <li><a class="nav-link" href="#CSS_Padding">CSS Padding</a></li>
+                <li><a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a></li>
+                <li><a class="nav-link" href="#More_about_CSS">More about CSS</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <article>    
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                    <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+                    <p>Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.</p>                                     
+                </article>       
+            </section>
+            <section id="CSS_Syntax" class="main-section">
+                <header>
+                    <h2>CSS Syntax</h2>
+                </header>
+                <article>  
+                    <p>A CSS rule-set consists of a selector and a declaration block. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                    <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+                    <p><code class="code-box">p { color: red; text-align: center; }</code></p>
+                    <p>Example Explained:</p>
+                    <ul>
+                        <li><code>p</code> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+                        <li><code>color</code> is a property, and <code>red</code> is the property value.</li>
+                        <li><code>text-align</code> is a property, and <code>center</code> is the property value</li>
+                    </ul>
+                </article>      
+            </section>
+            <section id="CSS_Selectors" class="main-section">
+                <header>
+                    <h2>CSS Selectors</h2>
+                </header>  
+                <article>
+                    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+                    <p>We can divide CSS selectors into five categories:</p>
+                    <ul>
+                        <li>Simple selectors (select elements based on name, id, class).</li>
+                        <li>Combinator selectors (select elements based on a specific relationship between them).</li>
+                        <li>Pseudo-class selectors (select elements based on a certain state).</li>
+                        <li>Pseudo-elements selectors (select and style a part of an element).</li>    
+                        <li>Attribute selectors (select elements based on an attribute or attribute value).</li>
+                    </ul>
+                    <p>Here, all <p> elements on the page will be center-aligned, with a red text color:</p>
+                    <p><code class="code-box">p { text-align: center; color: red; }</code></p>
+                    <p>In this example all HTML elements with class="center" will be red and center-aligned:</p>
+                    <p><code class="code-box">.center { text-align: center; color: red; }</code></p>
+                </article> 
+            </section>
+            <section id="CSS_Background" class="main-section">
+                <header>
+                    <h2>CSS Background</h2>
+                </header>
+                <article>    
+                <p>The CSS background properties are used to define the background effects for elements.</p>
+                <p>In these chapters, you will learn about the following CSS background properties:</p>
+                <ul>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-repeat</li>
+                    <li>background-attachment</li>
+                    <li>background-position</li>
+                </ul>
+                <p>The <code class="box-text">background-color</code> property specifies the background color of an element. The background color of a page is set like this:</p>
+                <p><code class="code-box">body { background-color: lightblue; }</code></p>
+                <p>The <code>background-image</code> property specifies an image to use as the background of an element. The background image for a page can be set like this:</p>
+                <p><code class="code-box">body { background-image: url("paper.gif"); }</code></p>
+                <p>By default, the <code class="box-text">background-image</code> property repeats an image both horizontally and vertically. Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+                <p><code class="code-box">body{  background-image: url("gradient_bg.png"); }</code></p>
+                <p>If the image above is repeated only horizontally <code>background-repeat:repeat-x</code> the background will look better:</p>
+                <p><code class="code-box">body { background-image: url("gradient_bg.png"); <span>background-repeat: repeat-x; }</span></code></p>
+                <p>The <code class="box-text">background-attachment</code> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page). Specify that the background image should be fixed:</p>
+                <p><code class="code-box">body { background-image: url("img_tree.png"); <span>background-repeat: no-repeat;</span><span>background-position: right top;</span> <span>background-attachment: fixed; }</span></code></p>
+                <p>Specify that the background image should scroll with the rest of the page:</p>
+                <p><code class="code-box">body { background-image: url("img_tree.png"); <span>background-repeat: no-repeat;</span><span>background-position: right top;</span><span>background-attachment: scroll; }</span></code></p>
+                <p>The <code class="box-text">background-position</code> property is used to specify the position of the background image. Position the background image in the top-right corner:</p>
+                <p><code class="code-box">body { background-image: url("img_tree.png");<span>background-repeat: no-repeat;</span><span>background-position: right top; }</span></code></p>
+            </article>
+            </section>
+            <section id="CSS_Margins" class="main-section">
+                <header>
+                    <h2>CSS Margins</h2>
+                </header>    
+                <article>    
+                    <p>The CSS <code class="box-text">margin</code> properties are used to create space around elements, outside of any defined borders. With CSS, you have full control over the margins. CSS has properties for specifying the margin for each side of an element:</p>
+                    <ul>
+                        <li><code>margin-top</code></li>
+                        <li><code>margin-right</code></li>
+                        <li><code>margin-bottom</code></li>
+                        <li><code>margin-left</code></li>
+                    </ul>
+                    <p>All the margin properties can have the following values:</p>
+                    <ul>
+                        <li>auto - the browser calculates the margin</li>
+                        <li>length - specifies a margin in px, pt, cm, etc.</li>
+                        <li>% - specifies a margin in % of the width of the containing element</li>
+                        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="CSS_Padding" class="main-section">
+                <header>
+                    <h2>CSS Padding</h2>
+                </header> 
+                <article>    
+                    <p>The CSS <code class="box-text">padding</code> properties are used to generate space around an element's content, inside of any defined borders. With CSS, you have full control over the padding. CSS has properties for specifying the padding for each side of an element:</p>
+                    <ul>
+                        <li><code>padding-top</code></li>
+                        <li><code>padding-right</code></li>
+                        <li><code>padding-bottom</code></li>
+                        <li><code>padding-left</code></li>
+                    </ul>
+                    <p>All the padding properties can have the following values:</p>
+                    <ul>
+                        <li>length - specifies a padding in px, pt, cm, etc.</li>
+                        <li>% - specifies a padding in % of the width of the containing element</li>
+                        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+                    </ul>
+                </article>   
+            </section>
+            <section id="CSS_Box_Model" class="main-section">
+                <header>
+                    <h2>CSS Box Model</h2>
+                </header>
+                <article>   
+                    <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+                </article>     
+            </section>
+            <section id="More_about_CSS" class="main-section">
+                <header> 
+                    <h2>More about CSS</h2>
+                </header>  
+                <article>
+                    <p><a id="link-css" href="#">For more about CSS you can read here</a></p>
+                </article>  
+            </section>
+        </main>
+    </body>
+</html>
